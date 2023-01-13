@@ -1,0 +1,70 @@
+:root {
+    --left: var(75vw);
+}
+.frame {
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 500px;
+    height: 90vh;
+    border: 2px solid green;
+    overflow: hidden;
+    justify-content: center;
+    background-color: lightgreen;
+}
+
+.photo {
+    display: none;
+    height: 100%;
+    width: 100%;
+    transition: left 0.3s;
+}
+
+.photo.visible {
+    display: flex;
+    align-items: center;
+}
+
+.nav img {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(100% - 24px);
+    background-color: rgba(240, 248, 255, 0.3);
+    width: 100%;
+}
+
+.dot,
+#left,
+#right {
+    cursor: pointer;
+}
+
+.activedot {
+    font-weight: bolder;
+}
+
+#0 {
+    left: 0px;
+}
+
+#1{
+    left: 500px;
+}
+
+#2 {
+    left: 1000px;
+}
+
+#3 {
+    left: 1500px;
+}
+
+#4 {
+    left: 2000px;
+}
